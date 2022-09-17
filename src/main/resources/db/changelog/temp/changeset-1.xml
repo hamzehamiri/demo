@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd
+      http://www.liquibase.org/xml/ns/pro
+      http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.1.xsd">
+
+    <!--<changeSet id="tag-1.0" author="ab">
+        <tagDatabase tag="1.0"/>
+    </changeSet>
+
+    <changeSet id="tag-2.0" author="ab">
+        <createTable tableName="DEMO_TABLE">
+            <column name="id" type="int"></column>
+            <column name="name" type="varchar(50)"></column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="tag-3.0" author="ab">
+        <addColumn tableName="DEMO_TABLE">
+            <column name="address" type="varchar(50)"></column>
+        </addColumn>
+    </changeSet>
+
+    <changeSet id="testRollback" author="baeldung">
+        <createTable tableName="baeldung_turorial">
+            <column name="id" type="int"/>
+            <column name="heading" type="varchar(36)"/>
+            <column name="author" type="varchar(36)"/>
+        </createTable>
+        <rollback>
+            <dropTable tableName="baeldung_test"/>
+        </rollback>
+    </changeSet>-->
+
+    <changeSet id="testRollback" author="baeldung">
+        <createTable tableName="baeldung_turorial">
+            <column name="id" type="int"/>
+            <column name="heading" type="varchar(36)"/>
+            <column name="author" type="varchar(36)"/>
+        </createTable>
+        <rollback>
+            <dropTable tableName="baeldung_test"/>
+        </rollback>
+    </changeSet>
+</databaseChangeLog>
