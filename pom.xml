@@ -59,13 +59,13 @@
                 <configuration>
                     <propertyFileWillOverride>true</propertyFileWillOverride>
                     <changeLogFile>src/main/resources/db/changelog/db.changelog-master.yaml</changeLogFile>
-<!--                    <propertyFile>src/main/resources/application.properties</propertyFile>-->
+                    <propertyFile>src/main/resources/application.properties</propertyFile>
                     <url>jdbc:postgresql://localhost:5432/postgres</url>
                     <password>1</password>
                     <username>postgres</username>
 <!--                    <outputChangeLogFile>src/main/resources/db/changelog/generate.changelog.xml</outputChangeLogFile>-->
-                    <defaultSchemaName>MySchema</defaultSchemaName>
-                    <changelogSchemaName>MySchema</changelogSchemaName>
+<!--                    <defaultSchemaName>MySchema</defaultSchemaName>-->
+<!--                    <changelogSchemaName>MySchema</changelogSchemaName>-->
                 </configuration>
 
                 <executions>
