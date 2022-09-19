@@ -1,6 +1,6 @@
 databaseChangeLog:
   - changeSet:
-      id: create-author-table
+      id: test-rollback
       author: Hamzeh
       tagDatabase:
         tag: test-rollback
@@ -10,7 +10,6 @@ databaseChangeLog:
       changes:
         - createTable:
             tableName: Test
-            schemaName: hamzehschema
             columns:
               - column:
                   name: id

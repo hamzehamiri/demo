@@ -4,7 +4,6 @@ databaseChangeLog:
       author: Hamzeh
       changes:
         - createTable:
-            schemaName: "s1"
             tableName: article
             columns:
               - column:

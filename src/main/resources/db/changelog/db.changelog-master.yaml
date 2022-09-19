@@ -7,3 +7,9 @@ databaseChangeLog:
       file: db/changelog/changeset/change-column-author.yaml
   - include:
       file: db/changelog/changeset/test-rollback.yaml
+  - include:
+      file: db/changelog/changeset/release-v1.yaml
+  - include:
+      file: db/changelog/changeset/create-user.yaml
+  - include:
+      file: db/changelog/changeset/create-procdure.yaml

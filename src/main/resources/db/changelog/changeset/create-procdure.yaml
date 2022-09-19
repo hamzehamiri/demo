@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: p1
+      author: Hamzeh
+      changes:
+        - createProcedure:
+            procedureName: p1
+            remarks: "This is a procedure"
+            path: "src/main/resources/db/changelog/changeset/procedures/procedure.sql"
+            procedureText: "CREATE PROCEDURE p1 AS BEGIN SELECT * FROM article; END;"
+            sql: "CREATE PROCEDURE p1() BEGIN SELECT * FROM article; END"

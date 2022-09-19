@@ -86,3 +86,18 @@ databaseChangeLog:
             type: INTEGER
         tableName: author
 
+databaseChangeLog:
+- changeSet:
+    id: 1663580702078-1
+    author: amiri (generated)
+    changes:
+    - createSequence:
+        cacheSize: 1
+        cycle: false
+        dataType: bigint
+        incrementBy: 1
+        maxValue: 9223372036854775807
+        minValue: 1
+        sequenceName: hibernate_sequence
+        startValue: 1
+

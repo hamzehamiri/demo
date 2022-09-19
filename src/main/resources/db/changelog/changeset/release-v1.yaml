@@ -1,0 +1,6 @@
+databaseChangeLog:
+  - changeSet:
+      id: release-v1
+      author: Hamzeh
+      tagDatabase:
+        tag: release-v1
