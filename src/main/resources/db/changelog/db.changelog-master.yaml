@@ -5,3 +5,5 @@ databaseChangeLog:
       file: db/changelog/changeset/create-article.yaml
   - include:
       file: db/changelog/changeset/change-column-author.yaml
+  - include:
+      file: db/changelog/changeset/test-rollback.yaml

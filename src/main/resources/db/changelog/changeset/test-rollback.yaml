@@ -1,11 +1,16 @@
 databaseChangeLog:
   - changeSet:
+      id: create-author-table
+      author: Hamzeh
+      tagDatabase:
+        tag: test-rollback
+  - changeSet:
       id: create-article-table
       author: Hamzeh
       changes:
         - createTable:
-            schemaName: "s1"
-            tableName: article
+            tableName: Test
+            schemaName: hamzehschema
             columns:
               - column:
                   name: id
@@ -15,12 +20,13 @@ databaseChangeLog:
                     primaryKey: true
                     nullable: false
               - column:
-                  name: text
+                  name: name
                   type: varchar(255)
                   constraints:
                     nullable: false
               - column:
-                  name: author_id
-                  type: bigint
+                  name: age
+                  type: int
                   constraints:
-                    foreignKeyName: aut
+                    nullable: false
+

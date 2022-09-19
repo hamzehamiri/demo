@@ -5,6 +5,7 @@ databaseChangeLog:
       changes:
         - createTable:
             tableName: author
+            schemaName: hamzehschema
             columns:
               - column:
                   name: id
