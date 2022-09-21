@@ -1,0 +1,21 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1663761203334-1
+      author: amiri (generated)
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: name2
+                  type: VARCHAR(255)
+            tableName: persons
+  - changeSet:
+      id: 1663761203334-6
+      author: amiri (generated)
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - dropColumn:
+            columnName: name
+            tableName: persons
+

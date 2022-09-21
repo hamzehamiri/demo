@@ -15,14 +15,14 @@ public class Personal {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "name")
-    private String name;
+    @Column(name = "name2")
+    private String name2;
 
     @Column(name = "height")
     private String height;
 
-    public Personal(String name, String height) {
-        this.name = name;
+    public Personal(String name2, String height) {
+        this.name2 = name2;
         this.height = height;
     }
 

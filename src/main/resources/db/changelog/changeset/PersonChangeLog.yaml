@@ -1,0 +1,31 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1663760335239-1
+      author: amiri (generated)
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: pk_persons
+                  name: id
+                  type: BIGINT
+              - column:
+                  name: name
+                  type: VARCHAR(255)
+              - column:
+                  name: height
+                  type: VARCHAR(255)
+            schemaName: hamzehschema
+            tableName: persons
+  - changeSet:
+      id: 1663760335239-2
+      author: amiri (generated)
+      tagDatabase:
+        tag: CreatePerson
+
+
